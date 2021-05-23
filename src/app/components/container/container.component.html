@@ -3,4 +3,16 @@
         <h1>That might be useful!</h1>
         <p>List of useful references for learning and building websites.</p>
     </header>
+    <div class="tiles">
+            
+                <div class="link"
+                *ngFor="let link of links">
+                    <a [href]="link.url">
+                        <img [src]="link.logo" class="thumbnail">
+                        <h3 class="animated">{{link.name}}</h3>
+                        <p>{{link.description}}</p>
+                    </a>
+                </div>
+
+    </div>
 </div>

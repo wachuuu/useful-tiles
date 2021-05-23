@@ -10,7 +10,7 @@ import { ContainerComponent } from './components/container/container.component';
   declarations: [
     AppComponent,
     BackgroundComponent,
-    ContainerComponent
+    ContainerComponent,
   ],
   imports: [
     BrowserModule,
