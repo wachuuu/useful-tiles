@@ -58,51 +58,6 @@ a {
     position: relative;
 }
 
-.container {
-    
-    /* enable to scroll on a narrow screen */
-    max-width: 1300px;
-    max-height: 80vh;
-    overflow: auto;
-    /* hide scrollbar  */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-
-    position: relative;
-    padding: 3.2rem 6%;
-    border-radius: 2rem;
-    background: rgba(0, 0, 0, 0.7);
-    background: linear-gradient(to right top, rgba(0,0,0,0.75),  rgba(0,0,0,0.25));
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-}
-
-/* hide scrollbar  */
-.container::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-
-.bg__img {
-    position: absolute;
-}
-
-.bg__img--circle {
-    height: 150vh;
-    top: -30%;
-    left: 70%;
-    animation: rotate 150s linear infinite;
-    opacity: 0.02;
-}
-
-.bg__img--logo {
-    height: 140vh;
-    left: 0;
-    top: 50%;
-    opacity: 0.55;
-    transform: translate(-30%,-50%);
-}
-
-
 .animated::after {
     content: "";
     width: 0;
