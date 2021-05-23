@@ -16,3 +16,6 @@
 11. form edits json file
 12. adding photo to tile
 13. export to github
+
+---- minor improvements ----
+1. add media queries for mobile and tablets
