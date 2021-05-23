@@ -1,0 +1,18 @@
+1. generating components
+- components/background
+- components/maincontainer
+- components/tile
+- components/form
+
+2. styling for background
+3. syling for container
+4. styling for single tile
+5. json with existing tiles
+6. make tile component an adjustable template <ng-content> <ng-container>
+7. generate tiles in container (NgFor) with given json (NgModel)
+8. add form component
+9. styling for form component
+10. display form after clicking button (routing)
+11. form edits json file
+12. adding photo to tile
+13. export to github

@@ -1,0 +1,153 @@
+:root {
+    --darkblue: #12272b;
+    --darkpink: #1d1719;
+    --lightblue: #c4ecff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+    background: var(--darkblue);
+    background: linear-gradient(to right top, var(--darkpink), var(--darkblue));
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a p {
+    color: rgb(204, 204, 204);
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.animated {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.container {
+    
+    /* mozliwosc srollowania na waskim ekranie */
+    max-width: 1300px;
+    max-height: 80vh;
+    overflow: auto;
+    /* hide scrollbar  */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+    position: relative;
+    padding: 3.2rem 6%;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to right top, rgba(0,0,0,0.75),  rgba(0,0,0,0.25));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+/* hide scrollbar  */
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.bg__img {
+    position: absolute;
+}
+
+.bg__img--circle {
+    height: 150vh;
+    top: -30%;
+    left: 70%;
+    animation: rotate 150s linear infinite;
+    opacity: 0.02;
+}
+
+.bg__img--logo {
+    height: 140vh;
+    left: 0;
+    top: 50%;
+    opacity: 0.55;
+    transform: translate(-30%,-50%);
+}
+
+
+.animated::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--darkblue);
+    background: linear-gradient(to right, transparent, var(--lightblue));
+    transition: width 0.3s;
+}
+
+.animated:hover::after {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    margin: .1rem auto;
+    object-fit: cover;
+}
+
+.tiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: stretch;
+}
+
+
+.link {
+    max-width: 23%;
+    min-width: 200px;
+    margin: .5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@keyframes slideDown {
+    from {transform: translateY(-25vh);}
+    to {transform: translateY(100vh);}
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
